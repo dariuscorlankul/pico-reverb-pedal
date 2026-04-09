@@ -18,7 +18,7 @@ struct wav_header{
 
 typedef struct wav_data_array{
     int16_t *data;
-    uint16_t nr;
+    uint32_t nr;
 }wav_data_array;
 
 void write_to_wav(struct wav_data_array *array);

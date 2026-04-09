@@ -34,7 +34,6 @@ void write_to_wav(wav_data_array *audio_data){
 }
 
 void read_wav_data(const char *filename, wav_data_array *input_data){
-    input_data->data = audio_buffer;
     FILE *fp = fopen(filename, "rb");
     fseek(fp, 0, SEEK_END);
     long filesize = ftell(fp);
